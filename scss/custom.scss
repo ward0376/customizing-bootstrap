@@ -2,31 +2,60 @@
 // This is the file you will want to update to customize your page.
 
 // Import Google fonts here
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
 // Include any default variable overrides here (colors, font sizes, font family, etc..)
 
+$primary: #a04add;
+$secondary: #3b53c7;
+$success: #a4d882;
+$info: #59c1ef;
+$warning: #fff689;
+$danger: #e5446d;
+$light: #f2f2f2;
+$dark: #181853;
 
+.body{
+    background-color: $light;
+}
 
 // Adjust nav link hover color here
 
-
+$navbar-light-color:$light;
+$navbar-light-hover-color:$primary;
+$navbar-light-active-color:$warning;
 
 // Typography
 // Change font family for base text
 
+$font-family-base:'source sans 3', sans-serif;
 
 // Change font family for headings
 
+$headings-font-family:'libre baskerville', serif;
 
+.navbar-brand{
+    font-family: libre baskerville, serif;
+}
 
 // Change font sizes for h1-h6 using values in assignment
 
-
+$h1-font-size:3.052rem;
+$h2-font-size:2.44rem;
+$h3-font-size:1.953rem;
+$h4-font-size:1.563rem;
+$h5-font-size:1.25rem;
+$h6-font-size:1rem;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Add additional custom code here
+
+$btn-primary-color: var(--#{$primary}body-color);
+$btn-secondary-color: var(--#{$secondary}body-color);
+$btn-success-color: var(--#{success}body-color);
+$btn-info-color: var(--#{$info}body-color);
+$btn-warning-color: var(--#{$warning}body-color);
+$btn-danger-color: var(--#{$danger}body-color);
 
 // Target .navbar-brand and change font-family to use 'Libre Baskerville'.
